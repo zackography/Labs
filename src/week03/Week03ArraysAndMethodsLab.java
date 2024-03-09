@@ -15,42 +15,71 @@ public class Week03ArraysAndMethodsLab {
 		//
 		
 		// 1. Create an array with the following values 1, 5, 2, 8, 13, 6
-
+		int[] numbers = {1, 5, 2, 8, 13, 6};
 		
 		// 2. Print out the first element in the array
-	
+		System.out.println(numbers[0]);
 		
 		// 3. Print out the last element in the array without using the number 5
-		
+		System.out.println(numbers[numbers.length - 1]);
 		
 		// 4. Print out the element in the array at position 6, what happens?
-
+		//System.out.println(numbers[6]);
 		
 		// 5. Print out the element in the array at position -1, what happens?
-
+		//System.out.println(numbers[-1]);
 			
 		// 6. Write a traditional for loop that prints out each element in the array
-	
+		System.out.println("Number 6:");
+		for (int i = 0; i <= 5; i++) {
+			System.out.println(numbers[i]);
+		}
 			
 		// 7. Write an enhanced for loop that prints out each element in the array
+		System.out.println("Number 7:");
 
+		for (int number : numbers) {
+			System.out.println(number);
+		}
 		
 		// 8. Create a new variable called sum, write a loop that adds 
 		//			each element in the array to the sum
+		System.out.println("Number 8:");
 
+		double sum = 0;
+		
+		for (int number : numbers) {
+			sum += number;
+		}
+		System.out.println(sum);
 			
 		// 9. Create a new variable called average and assign the average value of the array to it
-
+		double average = sum / numbers.length;
+		
+		System.out.println(average);
+		
 		
 		// 10. Write an enhanced for loop that prints out each number in the array 
 		//			only if the number is odd
-
+		for (int number : numbers) {
+			if (number % 2 != 0){
+				System.out.println(number);
+			}
+		}
 		
 		// 11. Create an array that contains the values "Sam", "Sally", "Thomas", and "Robert"
+		String[] names = {"Sam", "Sally", "Thomas", "Robert"};
 
 		
 		// 12. Calculate the sum of all the letters in the new array
+		System.out.println("Number 12:");
 
+		double sumNames = 0;
+		
+		for (String name : names) {
+			sumNames += name.length();
+		}
+		System.out.println(sumNames);
 		
 
 		//
